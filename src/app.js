@@ -102,7 +102,7 @@ socketServer.on("connection", async (socket) => {
                 const productosActualizados = await productsManager.findAll();
                 socketServer.emit('productosActualizados', productosActualizados);
             } catch (error) {
-                logger.error('Error al agregar el producto:', error);
+                logger.error('Error adding product:', error);
             }
         });
 
