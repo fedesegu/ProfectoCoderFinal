@@ -9,4 +9,4 @@ const messagesSchema = new mongoose.Schema({
     },
 });
 
-export const messaggeModel = mongoose.model("Messages", messagesSchema);
+export const messageModel = mongoose.model("Messages", messagesSchema);

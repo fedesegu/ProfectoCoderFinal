@@ -22,7 +22,7 @@ import "./DB/configDB.js";
 import "./passport.js";
 import passport from "passport";
 import fileStore from "session-file-store";
-import { logger } from "../src/utils/utils.js"
+import { logger } from "../src/utils/logger.js"
 import  config  from "../src/config/config.js";
 import { swaggerSetup } from "../src/utils/swagger.js";
 import swaggerUi from "swagger-ui-express";
