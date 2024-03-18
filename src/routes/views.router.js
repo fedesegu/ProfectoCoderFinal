@@ -76,7 +76,7 @@ router.get("/users/:uid", (req, res) => {
 });
 
 router.get("/users", passport.authenticate("current", {session:false}), authMiddleware(["admin"]),  async (req, res) => {
-    const users = await Users.findAll();
+    const users = await usersManager.findAll();
 
     const clonedUsers = users.map(user => Object.assign({}, user._doc));
     res.render("usersAll", { users: clonedUsers, style: "product" });
